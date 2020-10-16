@@ -8,9 +8,7 @@ using Microsoft.EntityFrameworkCore;
 namespace API.Controllers
 {
     //Classe responsável por gerenciar as requisições relacionadas a entidade User
-    [ApiController]
-    [Route("api/[controller]")]
-    public class UsersController : ControllerBase
+    public class UsersController : BaseApiController
     {
         private readonly DataContext _context;
         public UsersController(DataContext context)
